@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Savoria Restaurant — Fresh food, warm atmosphere, unforgettable moments."
+    >
+    <link rel="icon" type="image/svg+xml" href="assets/download (1).svg">
+    <title>Savoria Restaurant | Fresh & Delicious</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                Savoria<span>.</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="nav-button">
+                Book a Table
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content container">
+
+                <div class="hero-text">
+
+                    <span class="hero-label">
+                        WELCOME TO SAVORIA
+                    </span>
+
+                    <h1>
+                        Taste the Art of
+                        <span>Fine Dining</span>
+                    </h1>
+
+                    <p>
+                        Experience exceptional flavors, fresh ingredients,
+                        and unforgettable moments at Savoria Restaurant.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#menu" class="primary-button">
+                            Explore Our Menu
+                        </a>
+
+                        <a href="#about" class="secondary-button">
+                            Discover Our Story
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-image" aria-hidden="true">
+                    <!-- Restaurant image will be added later -->
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about section-padding" id="about">
+
+            <div class="about-content container">
+
+                <!-- About Image -->
+                <div class="about-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85"
+                        alt="Elegant restaurant dining table with beautifully presented food"
+                        loading="lazy"
+                    >
+                </div>
+
+                <!-- About Text -->
+                <div class="about-text">
+
+                    <span class="section-label">OUR STORY</span>
+
+                    <h2>
+                        More Than Food,
+                        <span>A Memorable Experience</span>
+                    </h2>
+
+                    <p>
+                        At Savoria, we believe that great food brings
+                        people together. Our passion for fresh ingredients,
+                        creative recipes, and exceptional service makes
+                        every visit special.
+                    </p>
+
+                    <p>
+                        From carefully selected ingredients to the
+                        atmosphere of our restaurant, every detail
+                        is designed to create unforgettable moments.
+                    </p>
+
+                    <a href="#menu" class="primary-button">
+                        Discover Our Menu
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="menu section-padding" id="menu">
+
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-heading">
+
+                    <span class="section-label">OUR MENU</span>
+
+                    <h2>
+                        Discover Our
+                        <span>Special Dishes</span>
+                    </h2>
+
+                    <p>
+                        Carefully prepared dishes made with fresh
+                        ingredients and a passion for great food.
+                    </p>
+
+                </div>
+
+                <!-- Menu Cards -->
+                <div class="menu-grid">
+
+                    <!-- Dish 1 -->
+                    <article class="menu-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=85"
+                            alt="Fresh pasta with vegetables"
+                            loading="lazy"
+                        >
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-card-header">
+                                <h3>Italian Pasta</h3>
+                                <span class="price">$16</span>
+                            </div>
+
+                            <p>
+                                Fresh homemade pasta with creamy sauce
+                                and carefully selected herbs.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Dish 2 -->
+                    <article class="menu-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85"
+                            alt="Gourmet beef burger"
+                            loading="lazy"
+                        >
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-card-header">
+                                <h3>Classic Burger</h3>
+                                <span class="price">$14</span>
+                            </div>
+
+                            <p>
+                                Juicy grilled beef, fresh vegetables,
+                                and our signature sauce.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Dish 3 -->
+                    <article class="menu-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=85"
+                            alt="Fresh healthy salad"
+                            loading="lazy"
+                        >
+
+                        <div class="menu-card-content">
+
+                            <div class="menu-card-header">
+                                <h3>Fresh Garden Salad</h3>
+                                <span class="price">$12</span>
+                            </div>
+
+                            <p>
+                                A refreshing mix of seasonal vegetables,
+                                greens, and house dressing.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="menu-action">
+                    <a href="#contact" class="primary-button">
+                        Reserve Your Table
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="gallery section-padding" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">OUR GALLERY</span>
+
+                    <h2>
+                        A Glimpse of
+                        <span>Savoria</span>
+                    </h2>
+
+                    <p>
+                        Discover our delicious dishes and welcoming atmosphere.
+                    </p>
+
+                </div>
+
+                <div class="gallery-grid">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=85"
+                        alt="Elegant restaurant dining experience"
+                        loading="lazy"
+                    >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85"
+                        alt="Freshly prepared restaurant dish"
+                        loading="lazy"
+                    >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=85"
+                        alt="Elegant restaurant dining area"
+                        loading="lazy"
+                    >
+                    
+                    <img
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=85"
+                        alt="Warm and welcoming restaurant interior"
+                        loading="lazy"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="testimonials section-padding" id="testimonials">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">TESTIMONIALS</span>
+
+                    <h2>
+                        What Our Guests
+                        <span>Say About Us</span>
+                    </h2>
+
+                    <p>
+                        We love hearing from the people who make
+                        Savoria special.
+                    </p>
+
+                </div>
+
+                <div class="testimonials-grid">
+
+                    <article class="testimonial-card">
+
+                        <div class="stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "Amazing food, wonderful atmosphere,
+                            and excellent service. Definitely coming back!"
+                        </p>
+
+                        <h3>Alex Morgan</h3>
+                        <span>Regular Guest</span>
+
+                    </article>
+
+                    <article class="testimonial-card">
+
+                        <div class="stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "Every dish was beautifully prepared.
+                            One of the best dining experiences I've had."
+                        </p>
+
+                        <h3>Sarah Johnson</h3>
+                        <span>Food Lover</span>
+
+                    </article>
+
+                    <article class="testimonial-card">
+
+                        <div class="stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "Friendly staff, delicious meals,
+                            and a beautiful place to spend an evening."
+                        </p>
+
+                        <h3>Daniel Smith</h3>
+                        <span>Happy Guest</span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact section-padding" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">GET IN TOUCH</span>
+
+                    <h2>
+                        We'd Love to
+                        <span>Hear From You</span>
+                    </h2>
+
+                    <p>
+                        Have a question or want to reserve a table?
+                        Get in touch with us.
+                    </p>
+
+                </div>
+
+                <div class="contact-content">
+
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+
+                        <div class="contact-item">
+                            <h3>Our Address</h3>
+                            <p>123 Restaurant Street, New York, USA</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Phone Number</h3>
+                            <p>+1 234 567 890</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Email Address</h3>
+                            <p>hello@savoria.com</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Opening Hours</h3>
+                            <p>Monday – Sunday: 10:00 AM – 11:00 PM</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form
+                        class="contact-form"
+                        id="contact-form"
+                        name="contact"
+                        method="POST"
+                        action="/thank-you"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                    >
+                        <p class="hidden-field">
+                            <label>
+                                Don't fill this out:
+                                <input name="bot-field" type="text">
+                            </label>
+                        </p>
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="primary-button">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    Savoria<span>.</span>
+                </a>
+
+                <p>
+                    Bringing people together through
+                    exceptional food and unforgettable moments.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 Savoria Restaurant. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
