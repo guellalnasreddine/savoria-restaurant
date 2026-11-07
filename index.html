@@ -432,11 +432,13 @@
                         id="contact-form"
                         name="contact"
                         method="POST"
-                        action="/thank-you"
+                        action="/thank-you.html"
                         data-netlify="true"
                         data-netlify-honeypot="bot-field"
                     >
-                        <p class="hidden-field">
+                        <!-- الحقل المخفي الخاص باسم النموذج ليتعرف عليه Netlify -->
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden-field" style="display: none;">
                             <label>
                                 Don't fill this out:
                                 <input name="bot-field" type="text">
