@@ -45,3 +45,30 @@ document.addEventListener("keydown", (event) => {
     }
 
 });
+// =========================
+// Contact Form Submission (Netlify AJAX)
+// =========================
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault(); // منع الإرسال التقليدي للصفحة
+
+        const formData = new FormData(contactForm);
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+        .then(() => {
+            // الانتقال إلى صفحة الشكر بعد نجاح الإرسال
+            window.location.href = "/thank-you.html";
+        })
+        .catch((error) => {
+            console.error("Error submitting form:", error);
+            alert("حدث خطأ أثناء إرسال الرسالة، يرجى المحاولة مرة أخرى.");
+        });
+    });
+}
